@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Abhijeet Shewale | Senior Data Analyst</title>
+  <meta content="Strategic Lead Data Analyst with 4+ years of experience transforming complex financial datasets into high-value business insights." name="description">
+  <meta content="Data Analyst, Power BI, Python, SQL, Tableau, Bangalore" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* --- CUSTOM STYLES --- */
+
+    /* 1. Hero Image "As Is" Fix */
+    #hero {
+      background: transparent !important; /* Remove grey background colors */
+      position: relative;
+    }
+    
+    #hero img {
+      /* Force image to be fully visible and cover the area */
+      opacity: 1 !important; 
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    /* Ensure overlays are removed */
+    #hero:before {
+      content: none !important;
+      display: none !important;
+    }
+
+    /* Ensure text sits on top of the image */
+    #hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Hero Text Clean Up */
+    .hero p.hero-summary-text {
+      font-size: 1.15rem;
+      max-width: 800px;
+      margin-top: 20px;
+      line-height: 1.8;
+      color: #45505b; 
+      text-shadow: none; 
+      font-weight: 400;
+    }
+
+    /* Hero Icons */
+    .hero .social-links a {
+      font-size: 28px; 
+      display: inline-block;
+      color: #45505b; 
+      line-height: 1;
+      margin-right: 20px;
+      transition: 0.3s;
+    }
+    
+    .hero .social-links a:hover {
+      color: #0563bb; 
+    }
+
+    /* Resume Button Styling */
+    .btn-download-cv {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 12px 35px;
+      border-radius: 50px;
+      transition: 0.5s;
+      margin-top: 30px;
+      color: #fff;
+      background: #0563bb;
+      border: 2px solid #0563bb;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .btn-download-cv:hover {
+      background: transparent;
+      color: #0563bb;
+    }
+
+    /* Footer Icon Matching */
+    .footer .social-links a {
+      font-size: 24px;
+      display: inline-block;
+      background: #0563bb;
+      color: #fff;
+      line-height: 1;
+      padding: 10px;
+      margin-right: 10px;
+      border-radius: 50%;
+      text-align: center;
+      width: 45px;
+      height: 45px;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer .social-links a:hover {
+      background: #0678e3;
+      text-decoration: none;
+    }
+
+    /* Skills Card Styling & Colors */
+    .skills .service-item {
+        background: #fff;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+        border-radius: 10px;
+        height: 100%;
+        transition: 0.3s;
+    }
+    .skills .service-item .icon {
+        background: #0563bb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        font-size: 28px;
+        color: #fff;
+        transition: 0.3s;
+    }
+    
+    /* Skills Color Variants */
+    .skills .service-item.item-cyan .icon { background: #0dcaf0; }
+    .skills .service-item.item-orange .icon { background: #fd7e14; }
+    .skills .service-item.item-teal .icon { background: #20c997; }
+    .skills .service-item.item-red .icon { background: #df1529; }
+    .skills .service-item.item-indigo .icon { background: #6610f2; }
+    .skills .service-item.item-pink .icon { background: #f3268c; }
+
+    .skills .service-item h3 {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 22px;
+        color: #45505b;
+    }
+    .skills .service-item p {
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#skills"><i class="bi bi-tools navicon"></i><span>Skills</span></a></li>
+        <li><a href="#experience"><i class="bi bi-briefcase navicon"></i><span>Experience</span></a></li>
+        <li><a href="#volunteering"><i class="bi bi-people navicon"></i><span>Volunteering</span></a></li>
+        <li><a href="#education"><i class="bi bi-mortarboard navicon"></i><span>Education</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Projects</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section">
+
+      <img src="assets/img/hero-bg.png" alt="">
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>Abhijeet Shewale</h2>
+            
+            <p>I'm a <span class="typed" data-typed-items="Strategic Lead Data Analyst"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            
+            <p class="hero-summary-text">
+              Strategic Lead Data Analyst with 4+ years of experience transforming complex financial datasets into high-value business insights. Expert in architecting scalable data pipelines and executing Python/SQL automation strategies that reduce operational overhead by 60%. Proven track record of managing ₹50 Crore portfolios and driving $50,000+ in revenue growth through predictive modeling and dashboard optimization. Adept at bridging the gap between technical data engineering and executive decision-making.
+            </p>
+
+            <div class="social-links">
+              <a href="http://linkedin.com/in/abhijeet-shewale-biz" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/abhijeetshewale369" target="_blank" class="github"><i class="bi bi-github"></i></a>
+              <a href="mailto:abhijeet.shewale.369@gmail.com" class="google"><i class="bi bi-envelope"></i></a>
+              <a href="tel:+917559269369" class="phone"><i class="bi bi-phone"></i></a>
+            </div>
+
+            <div>
+              <a href="assets/Abhijeet_Shewale_Resume.pdf" download class="btn-download-cv">
+                <i class="bi bi-download me-2"></i> Download Resume
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="skills" class="skills section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>A comprehensive toolkit of technical languages, visualization platforms, and analytical methodologies.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan">
+              <div class="icon">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3>Tools & Technologies</h3>
+              <p>Power BI, Tableau, Google Analytics, Looker Studio, SQL, Python (Pandas, NumPy), Snowflake, Excel (Pivot Tables, VLOOKUP), API, Shopify, WooCommerce.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange">
+              <div class="icon">
+                <i class="bi bi-gear-wide-connected"></i>
+              </div>
+              <h3>Technical Skills</h3>
+              <p>ETL & Data Cleaning, Statistical Analysis, A/B Testing, KPI Development, Budgeting & Forecasting, Predictive Modeling, Database Management, Data Warehousing, Data Modeling, Root Cause Analysis (RCA), Financial Modeling, Data Governance, CRM Analytics.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-pink">
+              <div class="icon">
+                <i class="bi bi-bezier2"></i>
+              </div>
+              <h3>Design & Engineering</h3>
+              <p>Figma, Adobe Creative Suite, Ansys, SolidWorks, Blender 3D, SketchUp, AutoCAD.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-indigo">
+              <div class="icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <h3>AI & Productivity</h3>
+              <p>ChatGPT, Lovable, Notion AI, GitHub Copilot.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-teal">
+              <div class="icon">
+                <i class="bi bi-chat-heart"></i>
+              </div>
+              <h3>Soft Skills</h3>
+              <p>Project Management, Business Acumen, Data Storytelling, Stakeholder Communication, Critical Thinking, Problem-Solving, Attention to Detail, Time Management.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="experience" class="resume section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Professional Experience</h2>
+        <p>A timeline of delivering data-driven solutions and optimizing financial performance across organizations.</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="resume-item">
+              <h4>Lead Data Analyst</h4>
+              <h5>Nov 2024 - Present</h5>
+              <p><em>LLUBRAEB | Hyderabad, India | Remote |</em></p>
+              <ul>
+                <li>Spearheaded the quantitative data strategy for a ₹50 Crore AUM portfolio, designing Python-based valuation scripts to automate asset tracking.</li>
+                <li>Optimized data retrieval workflows utilizing SQL and cloud storage, creating a unified view of 350+ client portfolios that reduced manual reporting overhead by 60%.</li>
+                <li>Designed the firm's central Executive Dashboard in Power BI, delivering real-time visibility into Net Revenue and CAC.</li>
+                <li>Established enterprise-grade data governance protocols for tax and equity reporting, ensuring 100% regulatory compliance.</li>
+                <li>Led a cross-functional analytics unit, mentoring junior analysts on financial modeling best practices to accelerate report delivery velocity by 40%.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Senior Data Analyst</h4>
+              <h5>Sept 2023 - Nov 2024</h5>
+              <p><em>Home LLC | California, USA | Remote |</em></p>
+              <ul>
+                <li>Executed the migration of 100+ Mode reports using Python, SQL, Snowflake, and AWS, directly capturing $50,000 in net revenue through infrastructure modernization.</li>
+                <li>Synthesized complex datasets via advanced SQL and database management protocols, elevating data accuracy by 20%.</li>
+                <li>Developed 100+ data visualizations and interactive dashboards in Power BI, driving a 25% increase in stakeholder engagement.</li>
+                <li>Directed mentorship programs for junior analysts, establishing best practices that optimized task efficiency by 40%.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Data Analyst</h4>
+              <h5>July 2022 - Aug 2023</h5>
+              <p><em>BusinessOnBot | Bengaluru, India | Remote |</em></p>
+              <ul>
+                <li>Streamlined onboarding workflows utilizing SQL trend analysis to capture a 100% client adoption rate.</li>
+                <li>Engineered 200+ BI dashboards using Power BI, Tableau, and Looker Studio.</li>
+                <li>Enforced 100% regulatory compliance for Direct-to-Consumer (D2C) brands by implementing advanced data modeling frameworks for audit verification.</li>
+                <li>Slashed support latency by 20% and maximized issue resolution to 90% by deploying data-driven support algorithms.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Business Analyst</h4>
+              <h5>Dec 2021 - July 2022</h5>
+              <p><em>XL Dynamics | Bengaluru, India | Remote |</em></p>
+              <ul>
+                <li>Architected automated ETL pipelines using SQL and Excel, eliminating bottlenecks in loan validation to cut manual extraction overhead by 30%.</li>
+                <li>Neutralized 90% of financial risk exposure by executing rigorous statistical analysis on loan applications.</li>
+                <li>Accelerated executive decision-making by 95% via the design of high-velocity KPI dashboards in Power BI, delivering real-time operational visibility.</li>
+                <li>Fortified loan portfolio integrity by deploying predictive risk models and descriptive statistics, driving down potential default risks by 40%.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteering" class="resume section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Volunteering & Leadership</h2>
+        <p>Demonstrated leadership in technical initiatives and team management beyond core professional roles.</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+
+             <div class="resume-item">
+              <h4>Formula 1 - Student Team Manager</h4>
+              <h5>June 2017 — June 2021</h5>
+              <p><em>Vellore Institute of Technology</em></p>
+              <ul>
+                <li>Orchestrated a 50-person engineering division for the end-to-end design and manufacturing of a Formula Student race car.</li>
+                <li>Oversaw treasury and logistical operations, harmonizing social media strategies to ensure 100% operational efficiency.</li>
+                <li>Secured a 50% increase in project funding by presenting strategic investment pitches to corporate sponsors.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Website Developer & Multimedia Lead</h4>
+              <h5>June 2017 — June 2021</h5>
+              <p><em>Freelance / Self-Employed</em></p>
+              <ul>
+                <li>Launched high-converting e-commerce architectures for 15+ clients utilizing Shopify and WooCommerce platforms.</li>
+                <li>Curated bespoke branding assets (logos, brochures) for 50+ accounts using Adobe Creative Suite (Photoshop, Illustrator).</li>
+                <li>Produced commercial video content for 30+ clients, achieving a 90% satisfaction rate through advanced post-production.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="resume section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Education</h2>
+        <p>Academic background laying the foundation for analytical thinking and engineering principles.</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="resume-item">
+              <h4>Bachelor of Engineering in Civil Engineering</h4>
+              <h5>2017 - 2021</h5>
+              <p><em>Vellore Institute of Technology, Chennai, India</em></p>
+              <p>GPA: 7.65/10.0</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Expertise</h2>
+        <p>Delivering high-value business insights through advanced analytics and automation.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon"><i class="bi bi-bar-chart-fill"></i></div>
+              <a href="#" class="stretched-link"><h3>Dashboard Architecture</h3></a>
+              <p>Developing real-time Power BI and Tableau dashboards to visualize KPIs, Net Revenue, and CAC for executive decision-making.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon"><i class="bi bi-database-fill-gear"></i></div>
+              <a href="#" class="stretched-link"><h3>Data Pipelines & ETL</h3></a>
+              <p>Architecting automated ETL pipelines using SQL, Python, and Snowflake to reduce manual reporting overhead and ensure data integrity.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon"><i class="bi bi-cash-coin"></i></div>
+              <a href="#" class="stretched-link"><h3>Financial Modeling</h3></a>
+              <p>Designing Python-based valuation scripts and predictive models to track asset portfolios and outperform market benchmarks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>Key Projects driving technical innovation and market insights.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src="assets/img/portfolio/project-1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>DIY Mortgage Website</h4>
+              <p>Real-time mortgage calculator scaling to 500+ monthly users.</p>
+              <a href="portfolio-details-2.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="assets/img/portfolio/project-2.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Derivatives (Options) Analysis</h4>
+              <p>Python-based analyzer for 1,000+ daily contracts boosting profitability by 15%.</p>
+              <a href="portfolio-details-1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations or opportunities.</p>
+      </div>
+      <div class="container" data-aos="fade" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div><h3>Location</h3><p>Bangalore, India</p></div>
+            </div>
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div><h3>Call</h3><p>+91 7559 269 369</p></div>
+            </div>
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div><h3>Email</h3><p>abhijeet.shewale.369@gmail.com</p></div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Your Name" required=""></div>
+                <div class="col-md-6 "><input type="email" class="form-control" name="email" placeholder="Your Email" required=""></div>
+                <div class="col-md-12"><input type="text" class="form-control" name="subject" placeholder="Subject" required=""></div>
+                <div class="col-md-12"><textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea></div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div><div class="error-message"></div><div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Abhijeet Shewale</h3>
+      <p>Transforming complex financial datasets into high-value business insights.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="http://linkedin.com/in/abhijeet-shewale-biz" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/abhijeetshewale369" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="mailto:abhijeet.shewale.369@gmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="tel:+917559269369"><i class="bi bi-phone"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Abhijeet Shewale</strong> <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
